@@ -21,13 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-          <Navbar />
-          <div className="flex  overflow-hidden container m-auto">
-            <Sidebar />
-            <main className="flex-1 overflow-auto p-4 bg-white shadow-sm">
-              {children}
-            </main>
-          </div>
+        <Navbar />
+        <div className=" flex lg:flex-row flex-col  overflow-hidden container m-auto">
+          <Sidebar />
+          <main className="flex-1 overflow-auto p-4 bg-white shadow-sm">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
